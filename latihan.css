@@ -4,7 +4,7 @@ a{
 }
 .header {
     height: 120px;
-    background-color:#3377FF;
+    background-color:black;
     color: #fff;
 }
 header h1{
@@ -25,8 +25,16 @@ header ul li a{
     font-size: 25px;
 }
 header ul li a :hover{
-    background-color: black;
+    color: red;
 }
+header ul button{
+    font-size: 10px;
+}
+.dark-mode {
+    background-color:black;
+    
+}
+
 .Naki{
     height: 60vh;
     
@@ -64,8 +72,7 @@ section{
     padding: 50px 0;
 }
 .tentang-saya{
-    background: #3377FF;
-    color: #fff;
+    color: #3377FF;
     text-align: center;
     padding: 15px 10px;
 }
@@ -81,7 +88,7 @@ section{
     margin-bottom: 50px;
 }
 .tentang-saya a{
-    color: black;
+    color: #3377FF;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 15px;
@@ -91,10 +98,16 @@ section{
     border-left: none;
     border-right: none;
 }
+.tentang-saya a:hover{
+    background: rosybrown;
+}
 section h3{
     text-align: center;
     padding: 20px 0;
    
+}
+.container h3{
+    color: #3377FF;
 }
 
 .box .col-4{
@@ -118,4 +131,87 @@ section h3{
 .box .col-4 h4{
     margin: 20px 0;
     
+}
+.kontak{
+    color: #3377FF;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kontak .wreaper h2{
+    text-shadow: 0 4px 0px black;
+    font-size: 2,5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+.kontak .wreaper-kontak input, .kontak .wreaper-kontak textarea {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 11px;
+    padding: 10px;
+    margin-bottom: 18px;
+    font-family: sans-serif;
+}
+.kontak .wreaper-kontak textarea {
+    height: 120px;
+}
+.kontak .wreaper-kontak input[type="submit"] {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 10px 30px;
+    border: 3px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #3377FF;
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+}
+.kontak .wreaper-kontak input[type="submit"]:hover {
+    background: rosybrown;
+}
+
+footer{
+    padding: 30px 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.bg-loader{
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    border-top-color: #3377FF;
+    border-right-color: #3377FF;
+    border-bottom-color: #3377FF;
+    animation: mutar .8s linear infinite;
+
+}
+@keyframes mutar{
+    100% {
+        transform: rotate(360deg);
+    }
 }
