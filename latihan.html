@@ -10,27 +10,42 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div class="bg-loader">
         <div class="loader"></div>
     </div>
     <header>
         <div class="header">
             <h1><a href="index.html">NakiTM</a></h1>
+            <script>
+                const href = document.querySelectorAll(`h1 a`)
+                href.forEach(href => href.addEventListener(`mouseover` , function(e){
+                    href.classList.add(`animated` , `rubberBand`)
+                }))
+            </script>
             <ul>
                 <li class="active"><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="skill.html">SKILL</a></li>
+                <button onclick="myfunction()">togle dark mode</button>
             </ul>
+           <script>
+               function myfunction() {
+                var element =document.body;
+                element.classList.toggle("dark-mode");
+               }
+           </script>
         </div>
     </header>
+
 <section class="Naki">
     <h2>SELAMAT DATANG DI WEBSITE KITA</h2>
     <p>I`M YOHANES FERNANDO LEO IM A MECHANICAL ENGINEERING</p>
 </section>
 <section class="tentang-saya">
     <h2>about</h2>
-    <p>Orang awam menilai bahwa lulusan Teknik Sipil akan bekerja di bengkel otomotif. Faktanya, lulus dari Teknik Mesin kamu akan banyak menghabiskan waktu untuk bekerja di balik komputer sebagai engineer, maintenance planner, ataupun designer. Karena perusahaan-perusahaan di industri otomotif, kedirgantaraan, manufaktur dan otomatisasi, bioteknologi, maupun minyak dan gas membutuhkanmu dalam melakukan perancangan produk tertentu. Jadi peluang karier untuk lulusan Teknik Industri sangat besar, Quipperian! Jenis dan jenjang karier yang ditawarkan pun cukup bervariasi. Begitu pula dengan gaji yang kompetitif untuk entry level. Berikut ini beberapa bidang karier yang bisa kamu pilih setelah lulus dari Teknik Mesin:</p>
+    <p>Hallo, perkenalkan Nama saya Yohanes Fernando Leo saya berasal dari Maluk , Sumbawa Barat. Saya sekarang sedang menempuh pendidikan disalah satu perguruan tinggi  di Jogjakarta yaitu Institut Teknologi Dirgantara Adisutjipto , saya mengambil jurusan Teknik mesin dan saya sekarang berada di semester 6 . mengapa saya memilih teknik mesin ? karena teknik mesin merupakan jurusan yang keren selain itu Orang awam menilai bahwa lulusan Teknik Sipil akan bekerja di bengkel otomotif. Faktanya, lulus dari Teknik Mesin kamu akan banyak menghabiskan waktu untuk bekerja di balik komputer sebagai engineer, maintenance planner, ataupun designer. Karena perusahaan-perusahaan di industri otomotif, kedirgantaraan, manufaktur dan otomatisasi, bioteknologi, maupun minyak dan gas membutuhkanmu dalam melakukan perancangan produk tertentu. Jadi peluang karier untuk lulusan Teknik Industri sangat besar.</p>
     <a href="#!">dowload cv</a>
 </section>
 <section class="skill">
@@ -51,13 +66,13 @@
             </div>
             <div class="col-4">
                 <div class="icon"><i class="fas fa-car"></i></div>
-                <h4>Overhaul Angine</h4>
+                <h4>preventive maintenance</h4>
             </div>
         </div>
     </div>
     <section class="kontak">
         <div class="wreaper">
-            <h2>kontak</h2>
+            <h2>contact</h2>
             <div class="wreaper-kontak">
                 <form action="">
                     <input type="text" placeholder="Nama Lengkap Anda">
